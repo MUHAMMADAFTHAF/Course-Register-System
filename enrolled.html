@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="enrolled.css">
+    <script type="text/javascript" src="cscript.js"></script>
+    <title>Enrolled Student CRS</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>CRS - Enrolled Students</h1>
+        </div>
+
+      <div class="navbar">
+            <a href="index.html"><button> Home</button></a>
+            <a href="register.html"><button>  Register Courses</button></a>
+            <a href="available.html"><button> Available Courses</button></a>
+        </div>
+
+         <table align="center" border="1">
+            <tr align="center" style="color: white;">
+                <th width="100 ">
+                    Name
+                </th>
+                <th width="200 ">Email</th>
+                <th width="150">
+                    Course
+                </th>
+            </tr>
+
+
+            <tbody align="center" id="enrollTable">
+
+            </tbody>
+        </table>
+
+
+        <script type="text/javascript">
+            window.onload = function(){
+                showEnrolled();
+            };
+        </script>
+    </div>
+</body>
+</html>

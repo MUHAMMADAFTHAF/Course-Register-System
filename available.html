@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="available.css">
+    <script type="text/javascript" src="cscript.js"></script>
+    <title>Available Course CRS</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>CRS - Available Courses</h1>
+        </div>
+
+        <div class="navbar">
+            <a href="index.html"><button> Home</button></a>
+            <a href="register.html"><button>  Register Courses</button></a>
+            <a href="enrolled.html"><button> Enrolled Students</button></a>
+        </div>
+
+        <table border="1">
+            <tr align="center">
+                <th width="100 ">
+                    Course Id
+                </th>
+                <th width="150 ">Course Name</th>
+                <th width="150">
+                    Trainer
+                </th>
+                <th width="100">Duration In Weeks</th>
+            </tr>
+
+
+            <tbody align="center" id="courseTable">
+
+            </tbody>
+        </table>
+
+
+        <script type="text/javascript">
+            window.onload = function(){
+                showCourses();
+            };
+        </script>
+    </div>
+</body>
+</html>
